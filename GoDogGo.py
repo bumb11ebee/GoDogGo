@@ -1,10 +1,10 @@
 import os, time, platform
 
 def say(voice,message):
+    os.system('clear')
+    print(voice+': '+message)
     os.system('say -v '+voice+' '+message)
     time.sleep(0.5)
-
-
 
 if __name__ == '__main__':
     v1 = 'Alice'
