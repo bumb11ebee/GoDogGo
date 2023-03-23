@@ -1,6 +1,7 @@
 import os, time, platform
 
 def say(voice,message):
+    #This clears the terminal and then prints the message and then speaks it out
     os.system('clear')
     print(voice+': '+message)
     os.system('say -v '+voice+' '+message)
